@@ -1,7 +1,22 @@
 library(stats)
 
 ##1 make vector 1
-vec1 <- c(1,2,3,4,5,6,7,8,9,10)
+vec1 <- 5:50
 
 ##2 Coordinate 4
 vec1[4]
+
+##3 make second vector
+###Use formula sqrt((position_vector - coordinate)^2)
+vec3 <- sqrt(((1:length(vec1))-4)^2)
+vec3
+
+##4
+###make 2d matrix
+m1 <- as.matrix(5:50)
+m1a <- cbind(m1,45:90)
+View(m1a)
+###pick coordinate in matrix
+coord <- c(4,1)
+###distance formula sqrt((x1 - x2)^2 + (y1 - y2)^2)
+sqrt((coord[1] - length(m1a))^2 + (y1 - y2)^2)
